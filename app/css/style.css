@@ -1,0 +1,35 @@
+.loader {
+    margin: 0 auto 20px auto;
+    width: 75px;
+    height: 75px;
+    border: 7px solid rgba(3, 166, 253, 0.6);
+    border-radius: 50%;
+    border-left-color: #F52D99;
+    animation: loader 1.5s linear infinite;
+}
+
+.loader-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.loader-block--overlay {
+    position: fixed;
+    top: 0;
+    z-index: 200;
+}
+
+.loader-block--hide {
+    opacity: 0;
+}
+
+@keyframes loader {
+    100% {
+        transform: rotate(360deg);
+    }
+}
